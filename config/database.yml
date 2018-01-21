@@ -1,11 +1,11 @@
 development:
   adapter: postgresql
-  database: robot-world-development
+  database: robot_world_development
 
 test:
   adapter: postgresql
-  database: robot-world-test
+  database: robot_world_test
 
 production:
   adapter: postgresql
-  database: robot-world-production
+  database: robot_world_production

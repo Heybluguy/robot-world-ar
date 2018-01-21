@@ -1,4 +1,4 @@
-database_name = "robot-world-#{RobotWorldApp.environment}"
+database_name = "robot_world_#{RobotWorldApp.environment}"
 db = URI.parse(ENV['DATABASE_URL'] || "postgres://localhost/#{database_name}")
 
 # connect ActiveRecord with the current database

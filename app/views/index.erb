@@ -1,1 +1,40 @@
-<h1>My Robots</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Droid Inventory</title>
+    <link rel="stylesheet" type="text/css" href="/robot/index.css">
+  </head>
+  <body>
+    <header>
+    <div class="fade"></div>
+    <section class="star-wars">
+      <div class="crawl">
+        <div class="title">
+          <h1>Droid Inventory</h1>
+        </div>
+      </div>
+    </section>
+    </header>
+    <ul>
+      <li><a class="active" href="/robots">Droid Inventory</a></li>
+      <li><a href="/robots/new">Build a Droid</a></li>
+    </ul>
+
+      <% @robots.each do |robot| %>
+    <div class='container'>
+        <h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
+        <h3><%= robot.city %></h3>
+        <h3><%= robot.state %></h3>
+        <h3><%= robot.department %></h3><br>
+        <a href="/robots/<%= robot.id  %>/edit">Edit</a>
+        <form action="/robots/<%= robot.id %>" method="POST"><br>
+          <input type="hidden" name="_method" value="DELETE">
+          <input type="submit" value="delete"/>
+        </form>
+    </div>
+      <% end %>
+  </body>
+</html>
+
+
+
