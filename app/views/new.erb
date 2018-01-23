@@ -4,16 +4,17 @@
     <title>Build Droid</title>
     <link rel="stylesheet" type="text/css" href="/robot/new.css">
   </head>
+
   <body>
     <header>
     <div class="fade"></div>
-    <section class="star-wars">
-      <div class="crawl">
-        <div class="title">
-          <h1>Build Your Droid</h1>
+      <section class="star-wars">
+        <div class="crawl">
+          <div class="title">
+            <h1>Build Your Droid</h1>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </header>
     <ul>
       <li><a href="/robots">Droid Inventory</a></li>
@@ -23,10 +24,10 @@
     <div class='form-container'>
       <form action="/robots" method="post">
         <h4>Enter information for a new droid:</h4>
-        <input type='text' name='robot[name]'/><br/>
-        <input type='text' name='robot[city]'/><br/>
-        <input type='text' name='robot[state]'/><br/>
-        <input type='text' name='robot[department]'/><br/>
+        <input type='text' name='robot[name]' placeholder="Name"/><br/>
+        <input type='text' name='robot[city]' placeholder="City"/><br/>
+        <input type='text' name='robot[state]' placeholder="State"/><br/>
+        <input type='text' name='robot[department]' placeholder="Department"/><br/>
         <input type='submit'/>
       </form>
     </div>

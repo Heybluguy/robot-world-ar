@@ -4,16 +4,17 @@
     <title>Edit Droid</title>
     <link rel="stylesheet" type="text/css" href="/robot/edit.css">
   </head>
+  
   <body>
     <header>
-    <div class="fade"></div>
-    <section class="star-wars">
-      <div class="crawl">
-        <div class="title">
-          <h1>Edit Your Droid</h1>
+      <div class="fade"></div>
+      <section class="star-wars">
+        <div class="crawl">
+          <div class="title">
+            <h1>Edit Your Droid</h1>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </header>
     <ul>
       <li><a href="/robots">Droid Inventory</a></li>
@@ -23,10 +24,10 @@
     <div class='form-container'>
       <form action="/robots/<%= @robot.id %>" method="post">
         <input type="hidden" name="_method" value="PUT" />
-        <input type='text' name='robot[name]' value="<%= @robot.name %>"/><br/>
-        <input type='text' name='robot[city]' value="<%= @robot.city %>"/><br/>
-        <input type='text' name='robot[state]' value="<%= @robot.state %>"/><br/>
-        <input type='text' name='robot[department]' value="<%= @robot.department %>"/><br/>
+        <input type='text' name='robot[name]' placeholder="<%= @robot.name %>"/><br/>
+        <input type='text' name='robot[city]' placeholder="<%= @robot.city %>"/><br/>
+        <input type='text' name='robot[state]' placeholder="<%= @robot.state %>"/><br/>
+        <input type='text' name='robot[department]' placeholder="<%= @robot.department %>"/><br/>
         <input type='submit' value="Submit"/>
       </form>
     </div>
