@@ -13,7 +13,7 @@ class RobotWorldApp < Sinatra::Base
     erb :index
   end
 
-   get '/robots/new' do
+  get '/robots/new' do
     erb :new
   end
 
@@ -38,7 +38,7 @@ class RobotWorldApp < Sinatra::Base
     erb :show
   end
 
-    delete '/robots/:id' do |id|
+  delete '/robots/:id' do |id|
     Robot.destroy(id.to_i)
     redirect '/robots'
   end
