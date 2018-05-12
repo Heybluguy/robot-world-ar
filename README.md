@@ -1,5 +1,11 @@
 # Robot World
 
+![robotworld](app/assets/images/robotworld.png)
+## Setup
+- Install required gems `Bundle`.
+- Run `rackup`.
+- Visit localhost:9292 in your browser.
+
 ## Explore the Application and See What is already Setup
 
 - Before completing this project, complete [this](http://backend.turing.io/module2/homework/activerecord_exploration) exploration.
